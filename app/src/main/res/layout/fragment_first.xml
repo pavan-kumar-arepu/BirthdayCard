@@ -14,8 +14,8 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="100dp"
         android:fontFamily="cursive"
-        android:text="Happy Birthday Guru!"
-        android:textColor="#03A9F4"
+        android:text="@string/happy_birthday_guru"
+        android:textColor="#0288D1"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,9 +28,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_first"
-        app:layout_constraintVertical_bias="0.884" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -39,8 +37,20 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="20dp"
         android:fontFamily="cursive"
-        android:text="From Pavan"
+        android:text="@string/from_pavan"
         android:textColor="#3F51B5"
         app:layout_constraintBottom_toTopOf="@+id/button_first"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="317dp"
+        android:layout_height="338dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/button_first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_first"
+        tools:src="@drawable/sprinterlogo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
